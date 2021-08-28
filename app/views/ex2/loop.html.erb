@@ -1,0 +1,20 @@
+<h1>Hello</h1>
+<p>Welcome</p>
+
+	<% def number_or_nil(string)%>
+	<% num = string.to_i%>
+	<% num if num.to_s == string%>
+	<% end%>
+	<% x = number_or_nil(@a)%>
+	<% y = number_or_nil(@b)%>
+	<% if Integer === x && Integer === y %>
+		<%for i in x..y do%>
+			<%= i %>
+		<%end %>
+	<%else%>
+		<%= "You input wrong parameters. Please type again" %>
+	<%end %>
+
+	
+  
+  

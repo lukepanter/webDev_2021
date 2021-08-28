@@ -10,4 +10,8 @@ class MainController < ApplicationController
   end
   def contact
   end
+  def loop
+    @a =params[:a]
+    @b = params[:b]
+  end
 end
