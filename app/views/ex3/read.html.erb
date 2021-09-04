@@ -1,0 +1,11 @@
+<h1>Ex3#post</h1>
+<p>User <%= @b%> </p>
+<% start = 0 %>
+<% stop = @u.count %>
+<% while start < stop do%>
+	<p>Post <%= start+1%> </p> 
+	<%= @u[start].msg%>
+	<% start += 1 %>
+	<br>
+<%end%>
+
